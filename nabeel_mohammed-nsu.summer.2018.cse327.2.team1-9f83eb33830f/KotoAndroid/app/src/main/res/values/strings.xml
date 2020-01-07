@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">KotoAndroid</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_gallery_pick">GalleryPickActivity</string>
+    <string name="ok">OK!</string>
+    <string name="permission_camera_rationale">We need your Camera to Read, pretty pleeez?</string>
+    <string name="no_camera_permission">Sorry bro. No Camera Permission No App. Quitting.</string>
+    <string name="low_storage_error">Your Phone doesnt have much space. We need to download Vision so we can SEE and READ.</string>
+    <string name="title_activity_main">KOTO VISION</string>
+    <string name="ocr_header">Click &quot;Detect Text&quot; to detect text. DUH!</string>
+    <string name="read_text">Detect Text</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="ocr_success">Woohoo! Text Read Successfully.</string>
+    <string name="ocr_failure">Uhoh! We couldnt Read anything!</string>
+    <string name="ocr_error">"What is this??? Cant read it: %1$s"</string>
+</resources>

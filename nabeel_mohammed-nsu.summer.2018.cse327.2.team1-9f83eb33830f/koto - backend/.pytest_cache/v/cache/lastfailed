@@ -1,0 +1,22 @@
+{
+  "src/django-extensions/tests/management/commands/shell_plus_tests/test_collision_resolver.py": true,
+  "src/django-extensions/tests/management/commands/shell_plus_tests/test_import_subclasses.py": true,
+  "src/django-extensions/tests/management/commands/test_mail_debug.py": true,
+  "src/django-extensions/tests/management/commands/test_runserver_plus.py": true,
+  "src/django-extensions/tests/test_autoslug_fields.py": true,
+  "src/django-extensions/tests/test_clear_caches.py": true,
+  "src/django-extensions/tests/test_dumpscript.py": true,
+  "src/django-extensions/tests/test_encrypted_fields.py": true,
+  "src/django-extensions/tests/test_json_field.py": true,
+  "src/django-extensions/tests/test_management_command.py": true,
+  "src/django-extensions/tests/test_models.py": true,
+  "src/django-extensions/tests/test_randomchar_field.py": true,
+  "src/django-extensions/tests/test_runserver.py": true,
+  "src/django-extensions/tests/test_shortuuid_field.py": true,
+  "src/django-extensions/tests/test_timestamped_model.py": true,
+  "src/django-extensions/tests/testapp/jobs/daily/test_daily_job.py": true,
+  "src/django-extensions/tests/testapp/jobs/hourly/test_hourly_job.py": true,
+  "src/django-extensions/tests/testapp/jobs/monthly/test_monthly_job.py": true,
+  "src/django-extensions/tests/testapp/jobs/weekly/test_weekly_job.py": true,
+  "src/django-extensions/tests/testapp/jobs/yearly/test_yearly_job.py": true
+}

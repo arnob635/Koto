@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+    <com.jakfromspace.kotoandroid.com.google.android.gms.vision.ocr.CameraSourcePreview
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.jakfromspace.kotoandroid.com.google.android.gms.vision.ocr.GraphicOverlay
+            android:id="@+id/graphicOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.jakfromspace.kotoandroid.com.google.android.gms.vision.ocr.CameraSourcePreview>
+
+    <EditText
+        android:id="@+id/editTextCam"
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/preview"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Item Name"
+        android:inputType="text"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/editTextAmnt"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextAmnt"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Koto Amount?"
+        android:inputType="number|numberDecimal"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/buttonLiveSave"
+        android:layout_width="74dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:onClick="SaveLiveKoto"
+        android:tint="@color/colorPrimary"
+        app:backgroundTint="@color/colorBlack"
+        app:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="@color/colorAccent"
+        app:srcCompat="@drawable/ic_save_black_24dp" />
+
+</android.support.constraint.ConstraintLayout>

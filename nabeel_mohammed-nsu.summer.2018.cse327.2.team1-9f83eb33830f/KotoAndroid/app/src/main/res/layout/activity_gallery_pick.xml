@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GalleryPickActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/galleryImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="FixImageView"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/appicon"
+            tools:layout_editor_absoluteY="169dp" />
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/buttonRun"
+        style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="RunVision"
+        android:text="Run Vision"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCopy"
+        app:layout_constraintStart_toEndOf="@+id/buttonBrowse" />
+
+    <Button
+        android:id="@+id/buttonBrowse"
+        style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:onClick="BrowseGallery"
+        android:text="Browse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCopy"
+        style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="CopyClipboardVisionText"
+        android:text="Copy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/galleryTextView"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Recognized Text Will Appear Here"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+</android.support.constraint.ConstraintLayout>
